@@ -2,7 +2,7 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://czke33.github.io/The-Watch-Spot-team8project/",
+  "homepage": "https://czke33.github.io/thewatchspot-team8project/",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /parcel-project-team8/"
