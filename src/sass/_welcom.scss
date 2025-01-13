@@ -1,0 +1,275 @@
+:root {
+  --main-family: 'Epilogue', sans-serif;
+  --trasform: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --main-text-color: rgba(255, 255, 255, 1);
+  --main-button-color: rgba(30, 40, 39, 1);
+  --main-background-color: rgba(20, 20, 20, 1);
+}
+.main-container {
+  background-color: var(--main-background-color);
+  font-family: var(--font-family);
+  color: var(--main-text-color);
+  width: 100%;
+  padding: 40px 20px;
+
+  .main-section {
+    padding-left: 20px;
+    padding-right: 20px;
+
+
+    .welcome-title {
+      width: 335px;
+      font-size: 38px;
+      font-family: var(--font-family);
+      font-weight: 600;
+      line-height: 40px;
+      letter-spacing: -0.04em;
+    }
+
+    .welcome-paragraph {
+      float: right;
+      width: 248px;
+      color: var(--main-text-color);
+      letter-spacing: -0.28px;
+      padding: 40px 0;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 18px;
+    }
+
+    .welcome-picture {
+      img {
+        padding: 0;
+        width: 100%;
+      }
+    }
+
+    
+    .carousel {
+      position: relative;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 266px;
+      padding-top: 60px;
+     
+      
+      .slider {
+        width: 100%;
+        height: 190px;   
+        position: relative;
+        overflow: hidden;
+        background-color:  #1E2827;
+        
+        
+
+        .slide {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          transition: 1s;
+          padding: 5px 20px;
+        }
+      }
+      .nav-carousel {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 31px;
+
+        .btnslide-container {
+          gap: 12px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      
+
+          .btnslide {
+            width: 32px;
+            height: 32px;
+            padding: 7px;
+            border: 1px solid #ffffff80;
+            border-radius: 8px;
+            justify-content: center;
+            align-items: center;
+            transition: border-color .25s ease-in-out;
+            display: flex;
+          }
+          .btnslide:hover, .btnslide:focus {
+            border-color: #fff;
+          }
+        }
+
+        .slide-number {
+          gap: 6px;
+          font-family: Epilogue;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 18px;
+          letter-spacing: -0.02em;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+      }
+      
+     
+    }
+
+  }
+}
+
+/* Tablet  */
+@media screen and (min-width: 768px) {
+  .main-container {
+    padding-top: 80px;
+    padding-bottom: 40px;
+    display: block;
+
+    .main-section {
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      padding-left: 0px;
+      padding-right: 0px;
+      gap: 20px;
+      align-items: center;
+      
+
+
+      .welcome-title {
+        width: 653px;
+        font-size: 60px;
+        line-height: 62px;
+      }
+
+      .welcome-paragraph {
+        float: right;
+        width: 248px;
+      }
+
+      .welcome-picture {
+        padding-top: 20px;
+      }
+      .carousel {
+        width: 436px;
+        padding-top: 71px;
+        .slider {
+          height: 233px;
+         
+          .slide {
+            padding: 11px 44px;
+          }
+        }
+
+        .nav-carousel {
+          padding-top: 20px;
+  
+          .btnslide-container {
+            .btnslide {
+              width: 40px;
+              height: 40px;
+              padding: 8px;
+            }
+          }
+          .slide-number {
+            font-family: Epilogue;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 18px;
+            letter-spacing: -0.02em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/* Desktop  */
+
+@media screen and (min-width: 1178px) {
+  .main-container {
+    padding-top: 100px;
+    padding-bottom: 40px;
+    
+
+    .main-section {
+      max-width: 1178px;
+      position: relative;
+
+      .welcome-title {
+        max-width: 750px;
+        font-size: 60px;
+        width: 750px;
+        letter-spacing: -2.4px;
+      }
+
+      .welcome-paragraph {
+        width: 282px;
+        right: 20px;
+        padding: 0;
+        position: absolute;
+        top: 0px;
+      }
+
+      .welcome-picture {
+        position: relative;
+        right: -20px;
+
+        img {
+          width: 676px;
+          height: 394px;
+          margin-top: 43px;
+          margin-bottom: 80px;
+        }
+      }
+      .carousel {
+        width: 436px;
+        padding-bottom: 170px;
+        padding-right: 21px;
+        .slider {
+          height: 233px;
+         
+          .slide {
+            padding: 11px 44px;
+          }
+        }
+
+        .nav-carousel {
+          padding-top: 20px;
+  
+          .btnslide-container {
+            .btnslide {
+              width: 40px;
+              height: 40px;
+              padding: 8px;
+            }
+          }
+          .slide-number {
+            font-family: Epilogue;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 18px;
+            letter-spacing: -0.02em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+  
+        }
+        
+       
+      }
+     
+    }
+  }
+}
